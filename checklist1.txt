@@ -1,0 +1,9 @@
+id: 17
+Precondition:
+1. The app is launched
+2. Open the ""Our products"" section"
+Title:
+The "Currency.com Exchange" link redirects to App Store to download Crypto Exchange the Currency.com app
+Expected result:
+The App store to download "Crypto Exchange Currency.com" app is opened
+Result: Passed
