@@ -19,3 +19,4 @@ Steps:
 Actual Result:
  The Page control is not matching the "Get into practice!" screen
 Expected Result:	
+
