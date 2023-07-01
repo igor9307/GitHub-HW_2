@@ -1,0 +1,66 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman - git branch Postman
+- Jmeter - git branch Jmeter
+- CheckLists - git branch CheckLists 
+- Bag Reports - git branch Bag_Reports
+- SQL - git branch SQL 
+- Charles - git branch Charles 
+- Mobile testing - git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий - git push -u origin Postman Jmeter CheckLists Bag_Reports SQL Charles Mobile_testing  or git push --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта -
+ git checkout Bag_Reports - чтобы перейти в Bag_Reports ветку
+ touch bag_report1.txt - создать текстовый документ
+ cat > bag_report1.txt
+id: 24
+date: 24.06.2023	
+Severity: Trivial	
+Environment (@nickname): iPhone XR @igor9307
+Title:
+ The Page control is not matching the "Get into practice!" screen on the "All Achievement" section after any test is repeated
+Precondition:	
+1. The app is downloaded
+2. Launch app
+3. Pass all the tests in Universes cards 
+Steps:
+1. Pass any test 4 or 5 right answer
+2. Tap the [Go to Achievements] button
+3. Open the ""Keep studying"" or ""Shall we practice?"" screen
+4. Tap the Close button
+5. Retake any test correctly
+6. Tap the [Go to Achievements] button
+7. Pay attention to the Page controls
+Actual Result:
+ The Page control is not matching the "Get into practice!" screen
+Expected Result:	
+ The Page control is matching the "Get into practice!" screen
+
+4. Запушить структуру багрепорта на внешний репозиторий -  
+git add bag_report1.txt
+git commit -m "bag_report1"
+git push 
+5. Вмержить ветку Bag Reports в Main
+ git checkout main
+ git merge Bag_Reports
+6. Запушить main на внешний репозиторий - git push -u origin main
+7. В ветке CheckLists набросать структуру чек листа.
+git checkout CheckLists
+touch checklist1.txt - создать текстовый документ
+cat > checklist1.txt
+id: 17
+Precondition:
+1. The app is launched
+2. Open the ""Our products"" section"
+Title:
+The "Currency.com Exchange" link redirects to App Store to download Crypto Exchange the Currency.com app
+Expected result:
+The App store to download "Crypto Exchange Currency.com" app is opened
+Result: Passed
+
+8. Запушить структуру на внешний репозиторий
+ git add checklist1.txt
+ git commit  -m "checklist-1"
+ git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+10. Синхронизировать Внешнюю и Локальную ветки Main - git pull
